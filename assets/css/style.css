@@ -246,31 +246,60 @@ footer .trademark {
   color: #999;
 }
 
-@media only screen and (min-width: 1024px) {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
   html {
-    font-size: 11px; /* Beispiel: Größere Schrift für größere Bildschirme */
-    margin: 0 10%; /* Beispiel: Margin etwas reduzieren */
+    font-size: 9px; /* Beispiel: Kleinere Schriftgröße für kleinere Geräte */
+    margin: 0; /* Beispiel: Kein seitlicher Abstand auf kleinen Bildschirmen */
   }
 
-  /* Weitere Anpassungen bei Bedarf */
+  /* Beispiel: Anpassungen für den Header / Hero-Bereich */
+  header {
+    height: 12vh; /* Beispiel: Reduzierte Höhe des Headers */
+  }
+
+  header h1 a {
+    font-size: 1.5rem; /* Beispiel: Kleinere Schriftgröße für den Header-Titel */
+  }
+
+  header nav ul {
+    gap: 2rem; /* Beispiel: Reduzierter Abstand zwischen den Nav-Elementen */
+  }
+
+  /* Beispiel: Anpassungen für den Back-To-Top-Button */
+  #backToTop {
+    bottom: 10px; /* Beispiel: Button-Position näher zum unteren Rand */
+    right: 20px; /* Beispiel: Button-Position näher zum rechten Rand */
+    padding: 10px; /* Beispiel: Kleinere Padding für den Button */
+    font-size: 14px; /* Beispiel: Kleinere Schriftgröße für den Button */
+  }
+
+  /* Beispiel: Anpassungen für das Grid-Layout */
+  .firstSixItems,
+  .secondSixItems,
+  .thirdSixItems,
+  .fourthSixItems,
+  .lastThreeItems {
+    margin: 2rem 0; /* Beispiel: Reduzierter Abstand oben und unten im Grid */
+  }
 }
 
-/* Media Query für 768px bis 1023px */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  html {
-    font-size: 10px; /* Zurücksetzen der Schriftgröße auf Standard */
-    margin: 0 8%; /* Zurücksetzen des Margins */
-  }
-
-  /* Weitere Anpassungen bei Bedarf */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  /* Hier kommen deine Anpassungen für kleine Geräte, wenn nötig */
 }
 
-/* Media Query für 480px bis 767px */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  html {
-    font-size: 9px; /* Beispiel: Kleinere Schrift für kleinere Bildschirme */
-    margin: 0 5%; /* Beispiel: Margin weiter reduzieren */
-  }
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /* Hier kommen deine Anpassungen für mittlere Geräte, wenn nötig */
+}
 
-  /* Weitere Anpassungen bei Bedarf */
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /* Hier kommen deine Anpassungen für große Geräte, wenn nötig */
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /* Hier kommen deine Anpassungen für extra große Geräte, wenn nötig */
 }
