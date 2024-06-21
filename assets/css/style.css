@@ -246,6 +246,8 @@ footer .trademark {
   color: #999;
 }
 
+
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   html {
@@ -266,40 +268,108 @@ footer .trademark {
     gap: 2rem; /* Beispiel: Reduzierter Abstand zwischen den Nav-Elementen */
   }
 
-  /* Beispiel: Anpassungen für den Back-To-Top-Button */
-  #backToTop {
-    bottom: 10px; /* Beispiel: Button-Position näher zum unteren Rand */
-    right: 20px; /* Beispiel: Button-Position näher zum rechten Rand */
-    padding: 10px; /* Beispiel: Kleinere Padding für den Button */
-    font-size: 14px; /* Beispiel: Kleinere Schriftgröße für den Button */
+  /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 9px;
+    margin: 0;
   }
 
-  /* Beispiel: Anpassungen für das Grid-Layout */
+  header {
+    height: auto;
+    padding: 10px 0;
+  }
+
+  header h1 a {
+    font-size: 1.8rem;
+  }
+
+  header nav ul {
+    gap: 2rem;
+  }
+
+  #backToTop {
+    bottom: 10px;
+    right: 20px;
+    padding: 10px;
+    font-size: 14px;
+  }
+
   .firstSixItems,
   .secondSixItems,
   .thirdSixItems,
   .fourthSixItems,
   .lastThreeItems {
-    margin: 2rem 0; /* Beispiel: Reduzierter Abstand oben und unten im Grid */
+    display: block; /* Ändere Grid auf Blockelemente */
+    margin: 2rem 0;
+  }
+
+  .firstSixItems > *,
+  .secondSixItems > *,
+  .thirdSixItems > *,
+  .fourthSixItems > *,
+  .lastThreeItems > * {
+    width: 100%; /* Alle direkten Kinder auf volle Breite setzen */
+    margin-bottom: 20px; /* Beispiel: Abstand zwischen den Elementen */
+  }
+
+  footer {
+    grid-template-columns: repeat(1, 1fr); /* Einzelne Spalte im Footer */
+    gap: 20px; /* Reduzierter Abstand */
+    margin-top: 2rem;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  /* Hier kommen deine Anpassungen für kleine Geräte, wenn nötig */
+  header {
+    height: 16vh;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  /* Hier kommen deine Anpassungen für mittlere Geräte, wenn nötig */
+  .firstSixItems,
+  .secondSixItems,
+  .thirdSixItems,
+  .fourthSixItems,
+  .lastThreeItems {
+    display: grid; /* Zurück zu Grid auf größeren Geräten */
+  }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  /* Hier kommen deine Anpassungen für große Geräte, wenn nötig */
-}
+/* Large devices (laptops/desktops, 1024px and up) */
+@media only screen and (min-width: 1024px) {
+  html {
+    margin: 0 12%; /* Beispiel: Breiterer seitlicher Rand für größere Bildschirme */
+  }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  /* Hier kommen deine Anpassungen für extra große Geräte, wenn nötig */
+  header {
+    height: 16vh; /* Beispiel: Wiederherstellung der Header-Höhe */
+  }
+
+  header h1 a {
+    font-size: 2rem; /* Beispiel: Größere Schriftgröße für den Header-Titel */
+  }
+
+  header nav ul {
+    gap: 4rem; /* Beispiel: Größerer Abstand zwischen den Nav-Elementen */
+  }
+
+  #backToTop {
+    display: block; /* Beispiel: Zurück zum Anzeigen des Back-To-Top-Buttons */
+  }
+
+  .firstSixItems,
+  .secondSixItems,
+  .thirdSixItems,
+  .fourthSixItems,
+  .lastThreeItems {
+    margin: 4rem 0; /* Beispiel: Erhöhter Abstand oben und unten im Grid */
+  }
+
+  footer {
+    grid-template-columns: repeat(4, 1fr); /* Beispiel: Zurück zu mehreren Spalten im Footer */
+    margin: 2rem 8%; /* Beispiel: Anpassung des Seitenabstands im Footer */
+  }
 }
