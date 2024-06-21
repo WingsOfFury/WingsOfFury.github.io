@@ -534,6 +534,13 @@ footer .trademark {
   .lastThreeItems > * {
     width: 100%;
   }
+
+  footer {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    margin-top: 2rem;
+    margin: 2rem 8% 0 8%;
+  }
 }
 
 @media only screen and (min-width: 600px) {
