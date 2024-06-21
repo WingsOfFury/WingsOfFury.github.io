@@ -514,10 +514,7 @@ footer .trademark {
   }
 
   #backToTop {
-    bottom: 10px;
-    right: 20px;
-    padding: 10px;
-    font-size: 14px;
+    display: none;
   }
 
   .firstSixItems,
@@ -526,7 +523,8 @@ footer .trademark {
   .fourthSixItems,
   .lastThreeItems {
     display: block;
-    margin: 2rem 0;
+    margin: 0 8%;
+    margin-bottom: 20px;
   }
 
   .firstSixItems > *,
@@ -535,13 +533,6 @@ footer .trademark {
   .fourthSixItems > *,
   .lastThreeItems > * {
     width: 100%;
-    margin-bottom: 20px;
-  }
-
-  footer {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
-    margin-top: 2rem;
   }
 }
 
@@ -589,9 +580,4 @@ footer .trademark {
   .lastThreeItems {
     margin: 4rem 0;
   }
-
-  /* footer {
-    grid-template-columns: repeat(4, 1fr);
-    margin: 2rem 0 0 0;
-  } */
 }
