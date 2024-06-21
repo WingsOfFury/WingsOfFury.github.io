@@ -245,3 +245,49 @@ footer .trademark {
   font-size: 0.875rem;
   color: #999;
 }
+
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 380px) {
+  footer {
+    grid-template-columns: 1fr;
+    gap: 5px;
+    padding: 0.5rem;
+  }
+  
+  footer h3 {
+    font-size: 1.2rem; /* Beispiel für kleinere Schriftgröße */
+  }
+
+  footer p {
+    font-size: 0.875rem; /* Beispiel für kleinere Schriftgröße */
+  }
+
+  footer a {
+    font-size: 0.875rem; /* Beispiel für kleinere Schriftgröße */
+  }
+
+  footer .trademark {
+    font-size: 0.75rem; /* Beispiel für kleinere Schriftgröße */
+  }
