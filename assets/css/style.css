@@ -246,48 +246,31 @@ footer .trademark {
   color: #999;
 }
 
-
-/* Media Queries */
-@media (max-width: 1024px) {
-  footer {
-    grid-template-columns: repeat(2, 1fr);
+@media only screen and (min-width: 1024px) {
+  html {
+    font-size: 11px; /* Beispiel: Größere Schrift für größere Bildschirme */
+    margin: 0 10%; /* Beispiel: Margin etwas reduzieren */
   }
+
+  /* Weitere Anpassungen bei Bedarf */
 }
 
-@media (max-width: 768px) {
-  footer {
-    grid-template-columns: 1fr;
-    gap: 20px;
+/* Media Query für 768px bis 1023px */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  html {
+    font-size: 10px; /* Zurücksetzen der Schriftgröße auf Standard */
+    margin: 0 8%; /* Zurücksetzen des Margins */
   }
+
+  /* Weitere Anpassungen bei Bedarf */
 }
 
-@media (max-width: 480px) {
-  footer {
-    grid-template-columns: 1fr;
-    gap: 10px;
-    padding: 0.5rem;
+/* Media Query für 480px bis 767px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  html {
+    font-size: 9px; /* Beispiel: Kleinere Schrift für kleinere Bildschirme */
+    margin: 0 5%; /* Beispiel: Margin weiter reduzieren */
   }
+
+  /* Weitere Anpassungen bei Bedarf */
 }
-
-@media (max-width: 380px) {
-  footer {
-    grid-template-columns: 1fr;
-    gap: 5px;
-    padding: 0.5rem;
-  }
-  
-  footer h3 {
-    font-size: 1.2rem; /* Beispiel für kleinere Schriftgröße */
-  }
-
-  footer p {
-    font-size: 0.875rem; /* Beispiel für kleinere Schriftgröße */
-  }
-
-  footer a {
-    font-size: 0.875rem; /* Beispiel für kleinere Schriftgröße */
-  }
-
-  footer .trademark {
-    font-size: 0.75rem; /* Beispiel für kleinere Schriftgröße */
-  }
