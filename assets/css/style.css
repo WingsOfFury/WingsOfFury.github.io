@@ -503,6 +503,7 @@ footer .trademark {
   header {
     height: auto;
     padding: 10px 0;
+    text-align: center; /* Zentrieren des Inhalts im Header */
   }
 
   header h1 a {
@@ -510,7 +511,7 @@ footer .trademark {
   }
 
   header nav ul {
-    gap: 2rem;
+    display: none; /* Nav-Elemente ausblenden */
   }
 
   #backToTop {
@@ -539,15 +540,29 @@ footer .trademark {
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
     margin-top: 2rem;
-    margin: 2rem 8% 0 8%;
+    margin-left: 8%;
+    margin-right: 8%;
+    text-align: center; /* Zentrieren des Inhalts im Footer */
+  }
+
+  footer h3 {
+    margin-bottom: 0.5rem;
+  }
+
+  footer p {
+    margin-bottom: 0.5rem;
+  }
+
+  footer .trademark {
+    margin-top: 0.5rem;
   }
 }
 
-@media only screen and (min-width: 600px) {
+/* @media only screen and (min-width: 600px) {
   header {
     height: 16vh;
   }
-}
+} */
 
 @media only screen and (min-width: 768px) {
   .firstSixItems,
